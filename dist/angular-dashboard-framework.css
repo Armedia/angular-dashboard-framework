@@ -161,3 +161,7 @@ pre.edit {
 .structure-preview.selected h4 {
   color: #337ab7;
 }
+
+label > input{ /* HIDE RADIO */ visibility: hidden; /* Makes input not-clickable */position: absolute; /* Remove input from document flow */}
+label > input + img{ /* IMAGE STYLES */cursor:pointer;border:2px solid transparent;}
+label > input:checked + img { /* (RADIO CHECKED) IMAGE STYLES */ border:2px solid #286090;}
