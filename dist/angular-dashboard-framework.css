@@ -152,6 +152,12 @@ pre.edit {
   margin: auto;
 }
 
+
+.dashboard-container label {/* LABEL LAYOUT */ display: inline-block;}
+.dashboard-container label > input[type="radio"]{ /* HIDE RADIO */ visibility: hidden; /* Makes input not-clickable */position: absolute; /* Remove input from document flow */}
+.dashboard-container label > input[type="radio"] + img{ /* IMAGE STYLES */border:2px solid transparent;pointer-events: none;}
+.dashboard-container label > input[type="radio"]:checked + img { /* (RADIO CHECKED) IMAGE STYLES */ border:2px solid #286090;}
+
 .structure-preview:hover .column,
 .structure-preview.selected .column {
   border: 1px #337ab7 dashed;
@@ -162,6 +168,4 @@ pre.edit {
   color: #337ab7;
 }
 
-label > input{ /* HIDE RADIO */ visibility: hidden; /* Makes input not-clickable */position: absolute; /* Remove input from document flow */}
-label > input + img{ /* IMAGE STYLES */cursor:pointer;border:2px solid transparent;}
-label > input:checked + img { /* (RADIO CHECKED) IMAGE STYLES */ border:2px solid #286090;}
+
